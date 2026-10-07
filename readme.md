@@ -1,0 +1,58 @@
+# 🚀 TeamUp
+
+**TeamUp** is a dynamic peer-to-peer platform designed to help students **form college teams seamlessly** for hackathons, personal projects, college clubs, research, and competitions. It connects students looking for opportunities with room creators searching for specific skill sets, complete with matching recommendations and live status tracking.
+
+---
+
+### 📦 Key Features
+
+- **Smart Matching Dashboard:** Automatically suggests relevant rooms and events to students based on their profile metrics (skills, branch, and interests).
+- **Targeted Recruitment:** Room creators can search through pre-existing student profiles and directly send join offers to matching candidates.
+- **Flexible Access Control:** Supports both automated instant-join criteria and manual host review for incoming team requests.
+- **Cross-Department Adaptability:** Gatekeeping rules like _Required Branches_ and _Required Skills_ can be dynamically updated by the host if an out-of-department student makes a compelling request.
+
+---
+
+### 🗄️ Core Data Models
+
+#### 👨‍🎓 Student Model
+
+Tracks academic background, evolving skill sets, and current availability status.
+
+- **Name & Branch:** Basic identification and academic streamline.
+- **Year:** Dynamic field that automatically increments annually.
+- **Skills & Interests:** Modifiable tags that can be updated as the student learns.
+- **Projects & Experience:** Cumulative logs that scale automatically based on completed projects and academic year.
+- **Preferred Roles:** Targeted positions the student wants to take on (e.g., Frontend Dev, UI Designer).
+- **Availability Status:** Set to `Yes`, `No`, or `Waiting/Hold`.
+
+#### 🏠 Room Model
+
+Created by a host to aggregate talent for specific events or milestones.
+
+- **Host Details:** Metadata regarding the room creator.
+- **Event Details:** Comprehensive information, description, work type, start date, and end date.
+- **Room Categories:** Fully customized attributes based on the type chosen:
+  - `Hackathon` | `Personal Project` | `Clubs` | `Research` | `Competition` | `Other`
+- **Gatekeeping Criteria:** Required branches and skills (initially fixed by the host, but flexible via student requests).
+- **Roles & Deadlines:** Defined roles needed for the team and a hard application deadline.
+- **Request Handling:** Toggleable between `Auto-Accept` and `Manual-Review`.
+
+---
+
+### ⚡ Real-Time Update Engine
+
+The platform features a live-updating core that broadcasts instant system changes:
+
+- **Student Activity:** Immediate tracking of how many students have joined or exited a specific room.
+- **System Metrics:** Live counts of total rooms created, deleted, or marked as fully completed.
+- **Time & Overdue Alerts:** Automated warnings for approaching application deadlines, countdowns, and timeout alerts for overdue project milestones.
+
+---
+
+### 🛠️ Technology Stack
+
+- **Frontend:** React.js / Next.js, Tailwind CSS
+- **Backend:** Node.js (Express) or Python (FastAPI)
+- **Database:** MongoDB (Flexible Document Model) or PostgreSQL (Relational Integrity)
+- **Live Updates:** WebSockets (Socket.io) / Redis Pub-Sub

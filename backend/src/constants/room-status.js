@@ -1,0 +1,11 @@
+export const ROOM_STATUS = {
+  DRAFT: 'DRAFT',
+  OPEN: 'OPEN',
+  FULL: 'FULL',
+  IN_PROGRESS: 'IN_PROGRESS',
+  COMPLETED: 'COMPLETED',
+  EXPIRED: 'EXPIRED',
+  CANCELLED: 'CANCELLED',
+};
+
+export const ROOM_STATUS_LIST = Object.values(ROOM_STATUS);
