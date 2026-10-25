@@ -1,6 +1,6 @@
 # TeamUp local fixtures
 
-These seven JSON files model the application collections: users, students, rooms, room updates, applications, invitations, and notifications. Each contains at most 30 records. Relationships use email and room keys so the loader can map them to MongoDB IDs.
+The generator creates seven local JSON files for users, students, rooms, room updates, applications, invitations, and notifications. Each contains at most 30 records. Relationships use email and room keys so the loader can map them to MongoDB IDs. Generated JSON files are ignored by Git and can be removed after loading; removing them does not remove records from MongoDB.
 
 The `sanju@mail.com` account is linked to a hosted room, a pending application, a pending invitation, a room update, and notifications. Most fixture accounts participate in rooms; remaining accounts have profiles and notifications without being team members. Character fixture accounts use a lowercase first-name `@mail.com` address; the primary account keeps `sanju@mail.com`. All accounts share the same password supplied to the generator. User records store a bcrypt hash, not the plaintext password.
 
@@ -12,7 +12,7 @@ npm run fixtures:generate
 Remove-Item Env:TEAMUP_FIXTURE_PASSWORD
 ```
 
-The current generated files were created using the shared password requested for this local dataset. The plaintext password is not stored in the JSON files.
+The plaintext password is used only to generate bcrypt hashes and is not stored in the JSON files.
 
 Load the records only into a development MongoDB database after reviewing the target configured by `MONGO_URI`:
 

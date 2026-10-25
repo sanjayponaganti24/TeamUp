@@ -1,9 +1,20 @@
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const configuredApiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const apiUrl = new URL(configuredApiBase, window.location.origin);
+const localHosts = new Set(['localhost', '127.0.0.1']);
+
+// Keep localhost aliases aligned so the browser sends the auth cookie in dev.
+if (
+  import.meta.env.DEV &&
+  localHosts.has(window.location.hostname) &&
+  localHosts.has(apiUrl.hostname)
+) {
+  apiUrl.hostname = window.location.hostname;
+}
 
 const api = axios.create({
-  baseURL: API_BASE,
+  baseURL: apiUrl.toString().replace(/\/$/, ''),
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
