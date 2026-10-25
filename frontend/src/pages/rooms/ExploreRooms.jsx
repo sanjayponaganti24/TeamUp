@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useOutletContext, Link } from 'react-router-dom';
-import { Compass, Filter, Plus, CheckCircle2 } from 'lucide-react';
+import { Compass, Plus, CheckCircle2 } from 'lucide-react';
 import * as roomApi from '../../services/api/room-api.js';
 import * as applicationApi from '../../services/api/application-api.js';
 import RoomCard from '../../components/rooms/RoomCard.jsx';
@@ -25,9 +25,8 @@ const ExploreRooms = () => {
   const fetchRooms = async () => {
     setIsLoading(true);
     try {
-      const params = {};
+      const params = { status: selectedStatus, page: 1, limit: 100 };
       if (selectedType !== 'ALL') params.type = selectedType;
-      if (selectedStatus !== 'ALL') params.status = selectedStatus;
       if (search || globalSearch) params.search = search || globalSearch;
 
       const res = await roomApi.getRooms(params);
@@ -85,6 +84,7 @@ const ExploreRooms = () => {
     { id: 'CLUB', label: 'Clubs' },
     { id: 'RESEARCH', label: 'Research' },
     { id: 'COMPETITION', label: 'Competition' },
+    { id: 'OTHER', label: 'Other' },
   ];
 
   return (
@@ -134,6 +134,10 @@ const ExploreRooms = () => {
             <option value="OPEN">Open Only</option>
             <option value="FULL">Full</option>
             <option value="IN_PROGRESS">In Progress</option>
+            <option value="COMPLETED">Completed</option>
+            <option value="EXPIRED">Expired</option>
+            <option value="CANCELLED">Cancelled</option>
+            <option value="DRAFT">Draft</option>
           </select>
         </div>
       </div>

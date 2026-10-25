@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "fixtures:generate": "node scripts/generate-fixtures.js",
+    "fixtures:seed": "node scripts/seed-fixtures.js",
+    "fixtures:clean": "node scripts/clean-fixtures.js"
   },
   "keywords": [],
   "author": "",

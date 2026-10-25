@@ -16,11 +16,11 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 flex flex-col justify-between selection:bg-blue-100">
+    <div className="landing-shell min-h-screen bg-white text-slate-900 flex flex-col selection:bg-blue-100">
       {/* Top Navbar */}
       <header className="h-20 border-b border-slate-100 px-6 sm:px-12 flex items-center justify-between max-w-7xl w-full mx-auto">
         <div className="flex items-center space-x-2.5">
-          <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-sm shadow-blue-500/30">
+          <div className="app-brand-mark w-9 h-9 rounded-xl flex items-center justify-center text-white shadow-sm">
             <Layers className="w-5 h-5" />
           </div>
           <span className="text-xl font-bold tracking-tight text-slate-900">
@@ -68,7 +68,7 @@ const Home = () => {
       </header>
 
       {/* Hero Section */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-12 py-12 lg:py-20 flex flex-col lg:flex-row items-center justify-between gap-12">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-12 py-10 lg:py-14 flex flex-col lg:flex-row items-center justify-between gap-10">
         <div className="max-w-xl space-y-6 text-center lg:text-left">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-xs font-semibold text-blue-700">
             <Sparkles className="w-3.5 h-3.5 text-blue-600" />
@@ -103,7 +103,7 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="pt-4 flex items-center justify-center lg:justify-start space-x-6 text-xs text-slate-500 font-medium">
+          <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 text-xs text-slate-500 font-medium">
             <div className="flex items-center space-x-1.5">
               <CheckCircle2 className="w-4 h-4 text-emerald-500" />
               <span>Smart Match Engine</span>
@@ -178,9 +178,9 @@ const Home = () => {
       </main>
 
       {/* 4 Pillars Section */}
-      <section id="features" className="bg-slate-50/70 border-t border-slate-100 py-16 px-6 sm:px-12">
+      <section id="features" className="bg-slate-50/70 border-t border-slate-100 py-12 px-6 sm:px-12">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="text-center max-w-2xl mx-auto mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
               Everything you need to form winning teams
             </h2>

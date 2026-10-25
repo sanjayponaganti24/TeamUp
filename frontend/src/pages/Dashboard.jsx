@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Compass,
@@ -16,13 +16,15 @@ import { useNotification } from '../context/NotificationContext.jsx';
 import * as roomApi from '../services/api/room-api.js';
 import * as matchingApi from '../services/api/matching-api.js';
 import * as applicationApi from '../services/api/application-api.js';
+import * as invitationApi from '../services/api/invitation-api.js';
+import { getSocket } from '../services/socket/socket.js';
 import RoomCard from '../components/rooms/RoomCard.jsx';
 import Loading from '../components/common/Loading.jsx';
 import Modal from '../components/common/Modal.jsx';
 
 const Dashboard = () => {
   const { user, student } = useAuth();
-  const { unreadCount } = useNotification();
+  const { unreadCount, notifications } = useNotification();
 
   const [stats, setStats] = useState({
     myRoomsCount: 0,
@@ -32,7 +34,11 @@ const Dashboard = () => {
   });
 
   const [recommendedRooms, setRecommendedRooms] = useState([]);
+  const [communityRooms, setCommunityRooms] = useState([]);
   const [activeTeams, setActiveTeams] = useState([]);
+  const [myApplications, setMyApplications] = useState([]);
+  const [myInvitations, setMyInvitations] = useState([]);
+  const [showAllCommunityRooms, setShowAllCommunityRooms] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   // Join Request Modal state
@@ -42,39 +48,60 @@ const Dashboard = () => {
   const [isJoining, setIsJoining] = useState(false);
   const [joinFeedback, setJoinFeedback] = useState(null);
 
-  const loadDashboardData = async () => {
-    setIsLoading(true);
+  const loadDashboardData = useCallback(async ({ silent = false } = {}) => {
+    if (!silent) setIsLoading(true);
     try {
-      const [roomsRes, matchRes, appsRes, invsRes] = await Promise.all([
+      const [roomsRes, matchRes, appsRes, invsRes, communityRes] = await Promise.all([
         roomApi.getMyRooms(),
-        matchingApi.getRecommendedRooms({ limit: 6 }),
+        matchingApi.getRecommendedRooms({ limit: 9 }),
         applicationApi.getMyApplications(),
-        applicationApi.getMyApplications(), // Can also fetch invitations
+        invitationApi.getMyInvitations(),
+        roomApi.getRooms({ status: 'ALL', page: 1, limit: 100 }),
       ]);
 
       const hostedCount = roomsRes.data?.hosted?.length || 0;
       const joinedCount = roomsRes.data?.joined?.length || 0;
       const appsCount = appsRes.data?.length || 0;
+      const invitations = invsRes.data || [];
 
       setStats({
         myRoomsCount: hostedCount + joinedCount,
         applicationsCount: appsCount,
-        invitationsCount: 2, // fallback or dynamic count
+        invitationsCount: invitations.filter((invitation) => invitation.status === 'PENDING').length,
         notificationsCount: unreadCount,
       });
 
       setRecommendedRooms(matchRes.data || []);
+      setCommunityRooms(communityRes.data?.rooms || []);
       setActiveTeams([...(roomsRes.data?.hosted || []), ...(roomsRes.data?.joined || [])]);
+      setMyApplications(appsRes.data || []);
+      setMyInvitations(invitations);
     } catch (err) {
       console.error('Failed to load dashboard:', err);
     } finally {
-      setIsLoading(false);
+      if (!silent) setIsLoading(false);
     }
-  };
+  }, [unreadCount]);
 
   useEffect(() => {
     loadDashboardData();
-  }, [unreadCount]);
+  }, [loadDashboardData]);
+
+  useEffect(() => {
+    const socket = getSocket();
+    const refreshLiveData = () => loadDashboardData({ silent: true });
+    const liveEvents = ['ROOM_CREATED', 'APPLICATION_RECEIVED', 'APPLICATION_STATUS', 'INVITATION_RECEIVED'];
+    liveEvents.forEach((eventName) => socket.on(eventName, refreshLiveData));
+    return () => liveEvents.forEach((eventName) => socket.off(eventName, refreshLiveData));
+  }, [loadDashboardData]);
+
+  const sortedCommunityRooms = [...communityRooms].sort((first, second) => {
+    const priority = { OPEN: 0, IN_PROGRESS: 1, FULL: 2, DRAFT: 3, COMPLETED: 4, EXPIRED: 5, CANCELLED: 6 };
+    return (priority[first.status] ?? 7) - (priority[second.status] ?? 7);
+  });
+  const visibleCommunityRooms = showAllCommunityRooms ? sortedCommunityRooms : sortedCommunityRooms.slice(0, 13);
+  const activeCommunityCount = communityRooms.filter((room) => ['OPEN', 'FULL', 'IN_PROGRESS'].includes(room.status)).length;
+  const expiredCommunityCount = communityRooms.filter((room) => room.status === 'EXPIRED').length;
 
   const handleJoinSubmit = async (e) => {
     e.preventDefault();
@@ -133,6 +160,75 @@ const Dashboard = () => {
           <span>Create Room</span>
         </Link>
       </div>
+
+      {/* Recent account activity */}
+      <section className="grid grid-cols-1 xl:grid-cols-3 gap-4">
+        <div className="bg-white rounded-2xl border border-slate-100 p-5 shadow-xs">
+          <div className="flex items-center justify-between mb-3">
+            <div>
+              <h2 className="text-sm font-bold text-slate-900">My Applications</h2>
+              <p className="text-xs text-slate-500 mt-0.5">{myApplications.length} total</p>
+            </div>
+            <Link to="/notifications/applications" className="text-xs font-semibold text-blue-600">View all</Link>
+          </div>
+          {myApplications.length ? (
+            <ul className="divide-y divide-slate-100">
+              {myApplications.slice(0, 5).map((application) => (
+                <li key={application._id} className="py-2.5 flex items-center justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-xs font-semibold text-slate-800 truncate">{application.room?.name || 'Team room'}</p>
+                    <p className="text-[11px] text-slate-500">{application.requestedRole || 'Member'}</p>
+                  </div>
+                  <span className="text-[10px] font-semibold text-slate-600 bg-slate-100 rounded-full px-2 py-1">{application.status}</span>
+                </li>
+              ))}
+            </ul>
+          ) : <p className="text-xs text-slate-500 py-3">Your room applications will appear here.</p>}
+        </div>
+
+        <div className="bg-white rounded-2xl border border-slate-100 p-5 shadow-xs">
+          <div className="flex items-center justify-between mb-3">
+            <div>
+              <h2 className="text-sm font-bold text-slate-900">Invitations</h2>
+              <p className="text-xs text-slate-500 mt-0.5">{myInvitations.filter((invitation) => invitation.status === 'PENDING').length} waiting for a response</p>
+            </div>
+            <Link to="/notifications/invitations" className="text-xs font-semibold text-blue-600">View all</Link>
+          </div>
+          {myInvitations.length ? (
+            <ul className="divide-y divide-slate-100">
+              {myInvitations.slice(0, 7).map((invitation) => (
+                <li key={invitation._id} className="py-2.5 flex items-center justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-xs font-semibold text-slate-800 truncate">{invitation.room?.name || 'Team room'}</p>
+                    <p className="text-[11px] text-slate-500">From {invitation.invitedBy?.name || 'Team host'}</p>
+                  </div>
+                  <span className="text-[10px] font-semibold text-slate-600 bg-slate-100 rounded-full px-2 py-1">{invitation.status}</span>
+                </li>
+              ))}
+            </ul>
+          ) : <p className="text-xs text-slate-500 py-3">New team invitations will appear here.</p>}
+        </div>
+
+        <div className="bg-white rounded-2xl border border-slate-100 p-5 shadow-xs">
+          <div className="flex items-center justify-between mb-3">
+            <div>
+              <h2 className="text-sm font-bold text-slate-900">Recent Notifications</h2>
+              <p className="text-xs text-slate-500 mt-0.5">{unreadCount} unread</p>
+            </div>
+            <Link to="/notifications" className="text-xs font-semibold text-blue-600">View all</Link>
+          </div>
+          {notifications.length ? (
+            <ul className="divide-y divide-slate-100">
+              {notifications.slice(0, 9).map((notification) => (
+                <li key={notification._id} className="py-2.5">
+                  <p className="text-xs font-semibold text-slate-800 truncate">{notification.title}</p>
+                  <p className="text-[11px] text-slate-500 line-clamp-1">{notification.message}</p>
+                </li>
+              ))}
+            </ul>
+          ) : <p className="text-xs text-slate-500 py-3">Your updates will appear here.</p>}
+        </div>
+      </section>
 
       {/* 4 Stat Metric Cards (Screen 6 from Reference) */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -237,6 +333,49 @@ const Dashboard = () => {
         )}
       </section>
 
+      {/* All public rooms shared by TeamUp members */}
+      <section className="space-y-4">
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <h2 className="text-lg font-bold text-slate-900">All TeamUp Teams</h2>
+            <p className="mt-1 text-xs text-slate-500">{activeCommunityCount} active · {expiredCommunityCount} expired · {communityRooms.length} total rooms</p>
+          </div>
+          <div className="flex shrink-0 items-center gap-3">
+            {communityRooms.length > 13 && (
+              <button type="button" onClick={() => setShowAllCommunityRooms((showAll) => !showAll)} className="text-xs font-semibold text-slate-600 hover:text-slate-900">
+                {showAllCommunityRooms ? 'Show fewer' : `Show all ${communityRooms.length}`}
+              </button>
+            )}
+            <Link to="/rooms" className="text-xs font-semibold text-blue-600 hover:text-blue-800 flex items-center space-x-1">
+              <span>Explore</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        </div>
+        {communityRooms.length === 0 ? (
+          <div className="rounded-2xl border border-slate-100 bg-white p-6 text-center">
+            <p className="text-sm font-medium text-slate-600">No other teams are sharing rooms right now.</p>
+            <p className="mt-1 text-xs text-slate-400">New rooms from TeamUp members will appear here as they are created.</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {visibleCommunityRooms.map((room) => (
+              <RoomCard
+                key={room._id}
+                room={room}
+                onJoinClick={
+                  room.status === 'OPEN' &&
+                  String(room.host?._id || room.host) !== String(user?._id) &&
+                  !room.members?.some((member) => String(member.user?._id || member.user) === String(user?._id))
+                    ? (selected) => setSelectedRoom(selected)
+                    : undefined
+                }
+              />
+            ))}
+          </div>
+        )}
+      </section>
+
       {/* Active Teams Grid */}
       {activeTeams.length > 0 && (
         <section className="space-y-4">
@@ -252,7 +391,7 @@ const Dashboard = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {activeTeams.slice(0, 3).map((team) => (
+            {activeTeams.map((team) => (
               <div
                 key={team._id}
                 className="bg-white rounded-2xl border border-slate-100 p-5 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"

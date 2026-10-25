@@ -1,0 +1,212 @@
+[
+  {
+    "id": "f62b4783b87e1be2cf560ab4",
+    "name": "Sanjay Ponaganti",
+    "email": "sanju@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "942c74ec8284db98f7cafcb3",
+    "name": "Arya Stark",
+    "email": "arya@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "e2b75b01a3aed5ed9c9659cf",
+    "name": "Jon Snow",
+    "email": "jon@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "30f2938bee766a9b380177dd",
+    "name": "Daenerys Targaryen",
+    "email": "daenerys@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "e6bcaec19017a8c6cb8d8ef2",
+    "name": "Tyrion Lannister",
+    "email": "tyrion@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "8d3e69ddf31426cf1e61f323",
+    "name": "Sansa Stark",
+    "email": "sansa@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "a89b16f90b3b2082dece5b7b",
+    "name": "Cersei Lannister",
+    "email": "cersei@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "89defe8f1e3fdc8d21f7daf3",
+    "name": "Jaime Lannister",
+    "email": "jaime@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "91cc02ac10db274b54fc0de6",
+    "name": "Rhaenyra Targaryen",
+    "email": "rhaenyra@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "d131154e5d15aee9f76b3097",
+    "name": "Daemon Targaryen",
+    "email": "daemon@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "a7c0ac85925e27cfff6856ab",
+    "name": "Alicent Hightower",
+    "email": "alicent@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "7aab3b6b8788c659427ab473",
+    "name": "Aemond Targaryen",
+    "email": "aemond@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "602066c0a8cf1c4b0956d14b",
+    "name": "Eleven",
+    "email": "eleven@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "ddcb6c5059231475b3b6b836",
+    "name": "Mike Wheeler",
+    "email": "mike@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "3a03b322169ab7884d1bb606",
+    "name": "Dustin Henderson",
+    "email": "dustin@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "fab5e872c3af61ed64ea34b5",
+    "name": "Max Mayfield",
+    "email": "max@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "b8a565b939bfeb3b320da5bd",
+    "name": "Steve Harrington",
+    "email": "steve@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "5faa204aab34cfdd7ea72182",
+    "name": "Jonas Kahnwald",
+    "email": "jonas@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "8409c78279ff840601c8d918",
+    "name": "Martha Nielsen",
+    "email": "martha@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "c0d56850395ba598adc486a6",
+    "name": "Boruto Uzumaki",
+    "email": "boruto@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "cede14ffa5d54b8684c680b9",
+    "name": "Sarada Uchiha",
+    "email": "sarada@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "6562eb4996f6acdb7213fcd9",
+    "name": "Mitsuki",
+    "email": "mitsuki@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "7a70eeae44c4a8baa9828237",
+    "name": "Naruto Uzumaki",
+    "email": "naruto@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "01bb0c865834f2adf71f3e78",
+    "name": "Monkey D. Luffy",
+    "email": "monkey@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "7bf33955b769610556e85950",
+    "name": "Roronoa Zoro",
+    "email": "roronoa@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "a28c872c8234383ca881e1ac",
+    "name": "Nami",
+    "email": "nami@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "b5f9b2a9bfa67abc95081e1e",
+    "name": "Nico Robin",
+    "email": "nico@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "38a4fe9db148e3d2eba3eb83",
+    "name": "Mikasa Ackerman",
+    "email": "mikasa@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "432946b16fdc981efc9d72f3",
+    "name": "Levi Ackerman",
+    "email": "levi@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  },
+  {
+    "id": "865dc676954a45fe20610f63",
+    "name": "Peter Parker",
+    "email": "peter@mail.com",
+    "role": "student",
+    "passwordHash": "$2b$12$cdEhWLjeD6gwZkU23/Af8euxdlN4q9z1avJ.Ag4EwEoCnbhNnfmi2"
+  }
+]

@@ -48,7 +48,7 @@ const Sidebar = ({ onClose }) => {
             onClick={onClose}
             className="flex items-center space-x-2.5 group"
           >
-            <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-sm shadow-blue-500/30 group-hover:scale-105 transition-transform">
+            <div className="app-brand-mark w-9 h-9 rounded-xl flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
               <Layers className="w-5 h-5" />
             </div>
             <span className="text-xl font-bold tracking-tight text-slate-900">

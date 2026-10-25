@@ -5,7 +5,7 @@ import * as authApi from '../../services/api/auth-api.js';
 
 const ResetPassword = () => {
   const [searchParams] = useSearchParams();
-  const token = searchParams.get('token') || 'demo-reset-token';
+  const token = searchParams.get('token') || '';
 
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -16,6 +16,10 @@ const ResetPassword = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!token) {
+      setError('This reset link is missing or invalid. Request a new password reset link.');
+      return;
+    }
     if (password !== confirmPassword) {
       return setError('Passwords do not match.');
     }

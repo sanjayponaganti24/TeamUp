@@ -1,0 +1,302 @@
+[
+  {
+    "id": "7e17b52d02f59ef9317b39e8",
+    "roomKey": "room-03",
+    "studentEmail": "sanju@mail.com",
+    "invitedByEmail": "jon@mail.com",
+    "role": "Frontend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "PENDING",
+    "createdAt": "2026-10-25T00:00:00.000Z"
+  },
+  {
+    "id": "d75aeddf81deb5a312c9b7da",
+    "roomKey": "room-04",
+    "studentEmail": "daemon@mail.com",
+    "invitedByEmail": "daenerys@mail.com",
+    "role": "Backend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "ACCEPTED",
+    "createdAt": "2026-10-24T00:00:00.000Z"
+  },
+  {
+    "id": "85e8df872ec84c3140566cb3",
+    "roomKey": "room-05",
+    "studentEmail": "aemond@mail.com",
+    "invitedByEmail": "tyrion@mail.com",
+    "role": "Product Designer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "DECLINED",
+    "createdAt": "2026-10-23T00:00:00.000Z"
+  },
+  {
+    "id": "ba2e78240f52696b8bced406",
+    "roomKey": "room-06",
+    "studentEmail": "mike@mail.com",
+    "invitedByEmail": "sansa@mail.com",
+    "role": "Data Scientist",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "CANCELLED",
+    "createdAt": "2026-10-22T00:00:00.000Z"
+  },
+  {
+    "id": "8bb4ba7a3bc685dd733734a9",
+    "roomKey": "room-07",
+    "studentEmail": "max@mail.com",
+    "invitedByEmail": "cersei@mail.com",
+    "role": "Researcher",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "PENDING",
+    "createdAt": "2026-10-21T00:00:00.000Z"
+  },
+  {
+    "id": "709f4d460932b4caac059de4",
+    "roomKey": "room-08",
+    "studentEmail": "jonas@mail.com",
+    "invitedByEmail": "jaime@mail.com",
+    "role": "Team Lead",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "ACCEPTED",
+    "createdAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "14ef54f294057441f04d12eb",
+    "roomKey": "room-09",
+    "studentEmail": "boruto@mail.com",
+    "invitedByEmail": "rhaenyra@mail.com",
+    "role": "Frontend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "DECLINED",
+    "createdAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "276805c87e14c0126c2f5a01",
+    "roomKey": "room-10",
+    "studentEmail": "mitsuki@mail.com",
+    "invitedByEmail": "daemon@mail.com",
+    "role": "Backend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "CANCELLED",
+    "createdAt": "2026-10-18T00:00:00.000Z"
+  },
+  {
+    "id": "b0f09bf451e2a16c05911699",
+    "roomKey": "room-11",
+    "studentEmail": "monkey@mail.com",
+    "invitedByEmail": "alicent@mail.com",
+    "role": "Product Designer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "PENDING",
+    "createdAt": "2026-10-17T00:00:00.000Z"
+  },
+  {
+    "id": "185458430436e6b56aca4c9a",
+    "roomKey": "room-12",
+    "studentEmail": "arya@mail.com",
+    "invitedByEmail": "aemond@mail.com",
+    "role": "Data Scientist",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "ACCEPTED",
+    "createdAt": "2026-10-16T00:00:00.000Z"
+  },
+  {
+    "id": "da09c86d6b381b3243ee7d73",
+    "roomKey": "room-13",
+    "studentEmail": "daenerys@mail.com",
+    "invitedByEmail": "eleven@mail.com",
+    "role": "Researcher",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "DECLINED",
+    "createdAt": "2026-10-15T00:00:00.000Z"
+  },
+  {
+    "id": "1a82f19f0d89ceff31da7cea",
+    "roomKey": "room-14",
+    "studentEmail": "sansa@mail.com",
+    "invitedByEmail": "mike@mail.com",
+    "role": "Team Lead",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "CANCELLED",
+    "createdAt": "2026-10-14T00:00:00.000Z"
+  },
+  {
+    "id": "43529e2dcb6e03083f549261",
+    "roomKey": "room-15",
+    "studentEmail": "jaime@mail.com",
+    "invitedByEmail": "dustin@mail.com",
+    "role": "Frontend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "PENDING",
+    "createdAt": "2026-10-13T00:00:00.000Z"
+  },
+  {
+    "id": "c3ccdc4d8356537409776fd4",
+    "roomKey": "room-16",
+    "studentEmail": "daemon@mail.com",
+    "invitedByEmail": "max@mail.com",
+    "role": "Backend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "ACCEPTED",
+    "createdAt": "2026-10-12T00:00:00.000Z"
+  },
+  {
+    "id": "011c1949981d0e3bfcd42694",
+    "roomKey": "room-17",
+    "studentEmail": "aemond@mail.com",
+    "invitedByEmail": "steve@mail.com",
+    "role": "Product Designer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "DECLINED",
+    "createdAt": "2026-10-11T00:00:00.000Z"
+  },
+  {
+    "id": "3f4421b7b4a2c23bd3881fb2",
+    "roomKey": "room-02",
+    "studentEmail": "mitsuki@mail.com",
+    "invitedByEmail": "arya@mail.com",
+    "role": "Data Scientist",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "CANCELLED",
+    "createdAt": "2026-10-10T00:00:00.000Z"
+  },
+  {
+    "id": "d782a5ac87c702160c2869de",
+    "roomKey": "room-03",
+    "studentEmail": "monkey@mail.com",
+    "invitedByEmail": "jon@mail.com",
+    "role": "Researcher",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "PENDING",
+    "createdAt": "2026-10-09T00:00:00.000Z"
+  },
+  {
+    "id": "4f4994729d9c8ee3a2dc9f16",
+    "roomKey": "room-04",
+    "studentEmail": "arya@mail.com",
+    "invitedByEmail": "daenerys@mail.com",
+    "role": "Team Lead",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "ACCEPTED",
+    "createdAt": "2026-10-08T00:00:00.000Z"
+  },
+  {
+    "id": "48e7d78cba3b59ff4e4e99c0",
+    "roomKey": "room-05",
+    "studentEmail": "daenerys@mail.com",
+    "invitedByEmail": "tyrion@mail.com",
+    "role": "Frontend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "DECLINED",
+    "createdAt": "2026-10-07T00:00:00.000Z"
+  },
+  {
+    "id": "61bd144364dce8d0dc32df64",
+    "roomKey": "room-06",
+    "studentEmail": "rhaenyra@mail.com",
+    "invitedByEmail": "sansa@mail.com",
+    "role": "Backend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "CANCELLED",
+    "createdAt": "2026-10-06T00:00:00.000Z"
+  },
+  {
+    "id": "00583ff05e0422479ca88a41",
+    "roomKey": "room-07",
+    "studentEmail": "alicent@mail.com",
+    "invitedByEmail": "cersei@mail.com",
+    "role": "Product Designer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "PENDING",
+    "createdAt": "2026-10-05T00:00:00.000Z"
+  },
+  {
+    "id": "ba0e7888b094c7deb618d670",
+    "roomKey": "room-08",
+    "studentEmail": "alicent@mail.com",
+    "invitedByEmail": "jaime@mail.com",
+    "role": "Data Scientist",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "ACCEPTED",
+    "createdAt": "2026-10-04T00:00:00.000Z"
+  },
+  {
+    "id": "a45b2baaa1f886854bd39d57",
+    "roomKey": "room-09",
+    "studentEmail": "aemond@mail.com",
+    "invitedByEmail": "rhaenyra@mail.com",
+    "role": "Researcher",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "DECLINED",
+    "createdAt": "2026-10-03T00:00:00.000Z"
+  },
+  {
+    "id": "2032ecbc290117c8a1236f1b",
+    "roomKey": "room-10",
+    "studentEmail": "mike@mail.com",
+    "invitedByEmail": "daemon@mail.com",
+    "role": "Team Lead",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "CANCELLED",
+    "createdAt": "2026-10-02T00:00:00.000Z"
+  },
+  {
+    "id": "394f526181c65dc5bd262564",
+    "roomKey": "room-11",
+    "studentEmail": "max@mail.com",
+    "invitedByEmail": "alicent@mail.com",
+    "role": "Frontend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "PENDING",
+    "createdAt": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "fbafb81e1b008579872a285e",
+    "roomKey": "room-12",
+    "studentEmail": "jonas@mail.com",
+    "invitedByEmail": "aemond@mail.com",
+    "role": "Backend Developer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "ACCEPTED",
+    "createdAt": "2026-09-30T00:00:00.000Z"
+  },
+  {
+    "id": "067b97281f1012ef37a9fb0c",
+    "roomKey": "room-13",
+    "studentEmail": "boruto@mail.com",
+    "invitedByEmail": "eleven@mail.com",
+    "role": "Product Designer",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "DECLINED",
+    "createdAt": "2026-09-29T00:00:00.000Z"
+  },
+  {
+    "id": "877cd6de339ea571a482810f",
+    "roomKey": "room-14",
+    "studentEmail": "mitsuki@mail.com",
+    "invitedByEmail": "mike@mail.com",
+    "role": "Data Scientist",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "CANCELLED",
+    "createdAt": "2026-09-28T00:00:00.000Z"
+  },
+  {
+    "id": "e6493ce51c03dd92a2337d86",
+    "roomKey": "room-15",
+    "studentEmail": "monkey@mail.com",
+    "invitedByEmail": "dustin@mail.com",
+    "role": "Researcher",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "PENDING",
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "e3fa22c4a4d4fb9442ebc84f",
+    "roomKey": "room-16",
+    "studentEmail": "arya@mail.com",
+    "invitedByEmail": "max@mail.com",
+    "role": "Team Lead",
+    "message": "Your interests and skills look like a strong fit for this team.",
+    "status": "ACCEPTED",
+    "createdAt": "2026-09-26T00:00:00.000Z"
+  }
+]

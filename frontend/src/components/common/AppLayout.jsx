@@ -8,7 +8,7 @@ const AppLayout = () => {
   const [globalSearch, setGlobalSearch] = useState('');
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] flex text-slate-900 font-sans">
+    <div className="app-shell min-h-screen bg-[#F8FAFC] flex text-slate-900 font-sans">
       {/* Desktop Sidebar */}
       <div className="hidden lg:block shrink-0">
         <Sidebar />

@@ -26,9 +26,15 @@ const RoomCard = ({ room, matchScore = null, reasons = [], onJoinClick }) => {
   };
 
   const getStatusBadge = () => {
-    if (isExpired) return { label: 'Expired', bg: 'bg-rose-50 text-rose-600 border-rose-100' };
-    if (isFull) return { label: 'Full', bg: 'bg-amber-50 text-amber-600 border-amber-100' };
-    return { label: 'Active', bg: 'bg-emerald-50 text-emerald-600 border-emerald-100' };
+    if (room.status === 'CANCELLED') return { label: 'Cancelled', bg: 'bg-slate-100 text-slate-600 border-slate-200' };
+    if (room.status === 'COMPLETED') return { label: 'Completed', bg: 'bg-blue-50 text-blue-600 border-blue-100' };
+    if (room.status === 'EXPIRED' || (room.status === 'OPEN' && isExpired)) {
+      return { label: 'Expired', bg: 'bg-rose-50 text-rose-600 border-rose-100' };
+    }
+    if (room.status === 'IN_PROGRESS') return { label: 'In progress', bg: 'bg-blue-50 text-blue-600 border-blue-100' };
+    if (room.status === 'FULL' || isFull) return { label: 'Full', bg: 'bg-amber-50 text-amber-600 border-amber-100' };
+    if (room.status === 'DRAFT') return { label: 'Draft', bg: 'bg-slate-100 text-slate-600 border-slate-200' };
+    return { label: 'Open', bg: 'bg-emerald-50 text-emerald-600 border-emerald-100' };
   };
 
   const status = getStatusBadge();
@@ -115,7 +121,7 @@ const RoomCard = ({ room, matchScore = null, reasons = [], onJoinClick }) => {
         </div>
 
         <div className="flex items-center space-x-2">
-          {onJoinClick && !isFull && !isExpired && (
+          {onJoinClick && room.status === 'OPEN' && !isFull && !isExpired && (
             <button
               onClick={() => onJoinClick(room)}
               className="px-3 py-1.5 bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white font-medium rounded-lg text-xs transition-colors"

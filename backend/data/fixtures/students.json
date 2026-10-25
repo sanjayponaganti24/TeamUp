@@ -1,0 +1,752 @@
+[
+  {
+    "id": "5105efc61c9d6b7dc59e73ae",
+    "userEmail": "sanju@mail.com",
+    "name": "Sanjay Ponaganti",
+    "email": "sanju@mail.com",
+    "branch": "Computer Science and Engineering",
+    "year": 1,
+    "skills": [
+      "React",
+      "UI Design",
+      "Figma"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Frontend Developer"
+    ],
+    "availability": "WAITING",
+    "bio": "Sanjay enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "c735d47812156e1592a30052",
+    "userEmail": "arya@mail.com",
+    "name": "Arya Stark",
+    "email": "arya@mail.com",
+    "branch": "Information Technology",
+    "year": 2,
+    "skills": [
+      "Node.js",
+      "MongoDB",
+      "REST APIs"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Backend Developer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Arya enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "f8e894b119bb854083258445",
+    "userEmail": "jon@mail.com",
+    "name": "Jon Snow",
+    "email": "jon@mail.com",
+    "branch": "Electronics & Communication (ECE)",
+    "year": 3,
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Product Designer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Jon enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "12b42a9a2404b05b45c1f9cb",
+    "userEmail": "daenerys@mail.com",
+    "name": "Daenerys Targaryen",
+    "email": "daenerys@mail.com",
+    "branch": "Artificial Intelligence & Data Science",
+    "year": 4,
+    "skills": [
+      "Java",
+      "Algorithms",
+      "Problem Solving"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Data Scientist"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Daenerys enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "992173c68523d894f0c2c60e",
+    "userEmail": "tyrion@mail.com",
+    "name": "Tyrion Lannister",
+    "email": "tyrion@mail.com",
+    "branch": "Mechanical Engineering",
+    "year": 5,
+    "skills": [
+      "TypeScript",
+      "Cloud",
+      "Testing"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Researcher"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Tyrion enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "06f381f3cf8984f0bec6bdab",
+    "userEmail": "sansa@mail.com",
+    "name": "Sansa Stark",
+    "email": "sansa@mail.com",
+    "branch": "Computer Science and Engineering",
+    "year": 1,
+    "skills": [
+      "Research",
+      "Writing",
+      "Statistics"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Team Lead"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Sansa enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "e74755b02e61e306318eaa26",
+    "userEmail": "cersei@mail.com",
+    "name": "Cersei Lannister",
+    "email": "cersei@mail.com",
+    "branch": "Information Technology",
+    "year": 2,
+    "skills": [
+      "React",
+      "UI Design",
+      "Figma"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Frontend Developer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Cersei enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "8dacd42773f1c5c9c7c954e5",
+    "userEmail": "jaime@mail.com",
+    "name": "Jaime Lannister",
+    "email": "jaime@mail.com",
+    "branch": "Electronics & Communication (ECE)",
+    "year": 3,
+    "skills": [
+      "Node.js",
+      "MongoDB",
+      "REST APIs"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Backend Developer"
+    ],
+    "availability": "WAITING",
+    "bio": "Jaime enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "e9f6d382589984c39a9446c5",
+    "userEmail": "rhaenyra@mail.com",
+    "name": "Rhaenyra Targaryen",
+    "email": "rhaenyra@mail.com",
+    "branch": "Artificial Intelligence & Data Science",
+    "year": 4,
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Product Designer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Rhaenyra enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "4e6211042e9856ea4b1364c0",
+    "userEmail": "daemon@mail.com",
+    "name": "Daemon Targaryen",
+    "email": "daemon@mail.com",
+    "branch": "Mechanical Engineering",
+    "year": 5,
+    "skills": [
+      "Java",
+      "Algorithms",
+      "Problem Solving"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Data Scientist"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Daemon enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "4801c31b4490f45b166d2b15",
+    "userEmail": "alicent@mail.com",
+    "name": "Alicent Hightower",
+    "email": "alicent@mail.com",
+    "branch": "Computer Science and Engineering",
+    "year": 1,
+    "skills": [
+      "TypeScript",
+      "Cloud",
+      "Testing"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Researcher"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Alicent enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "2578debff30d66e36f041e64",
+    "userEmail": "aemond@mail.com",
+    "name": "Aemond Targaryen",
+    "email": "aemond@mail.com",
+    "branch": "Information Technology",
+    "year": 2,
+    "skills": [
+      "Research",
+      "Writing",
+      "Statistics"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Team Lead"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Aemond enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "c51598ebfa7beafd2259c74e",
+    "userEmail": "eleven@mail.com",
+    "name": "Eleven",
+    "email": "eleven@mail.com",
+    "branch": "Electronics & Communication (ECE)",
+    "year": 3,
+    "skills": [
+      "React",
+      "UI Design",
+      "Figma"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Frontend Developer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Eleven enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "6dbf772f36cfd925e87c10a8",
+    "userEmail": "mike@mail.com",
+    "name": "Mike Wheeler",
+    "email": "mike@mail.com",
+    "branch": "Artificial Intelligence & Data Science",
+    "year": 4,
+    "skills": [
+      "Node.js",
+      "MongoDB",
+      "REST APIs"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Backend Developer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Mike enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "6549488a9bb40d53bcfde44e",
+    "userEmail": "dustin@mail.com",
+    "name": "Dustin Henderson",
+    "email": "dustin@mail.com",
+    "branch": "Mechanical Engineering",
+    "year": 5,
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Product Designer"
+    ],
+    "availability": "WAITING",
+    "bio": "Dustin enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "f87d91f1807b055ea51e12ed",
+    "userEmail": "max@mail.com",
+    "name": "Max Mayfield",
+    "email": "max@mail.com",
+    "branch": "Computer Science and Engineering",
+    "year": 1,
+    "skills": [
+      "Java",
+      "Algorithms",
+      "Problem Solving"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Data Scientist"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Max enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "3dd93d9de3c723e25dbab54c",
+    "userEmail": "steve@mail.com",
+    "name": "Steve Harrington",
+    "email": "steve@mail.com",
+    "branch": "Information Technology",
+    "year": 2,
+    "skills": [
+      "TypeScript",
+      "Cloud",
+      "Testing"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Researcher"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Steve enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "272d52f7de4b2935fa002cb9",
+    "userEmail": "jonas@mail.com",
+    "name": "Jonas Kahnwald",
+    "email": "jonas@mail.com",
+    "branch": "Electronics & Communication (ECE)",
+    "year": 3,
+    "skills": [
+      "Research",
+      "Writing",
+      "Statistics"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Team Lead"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Jonas enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "e5d1d7195c3244c47ecc0ee8",
+    "userEmail": "martha@mail.com",
+    "name": "Martha Nielsen",
+    "email": "martha@mail.com",
+    "branch": "Artificial Intelligence & Data Science",
+    "year": 4,
+    "skills": [
+      "React",
+      "UI Design",
+      "Figma"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Frontend Developer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Martha enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "4415385ca2f233c08d82df92",
+    "userEmail": "boruto@mail.com",
+    "name": "Boruto Uzumaki",
+    "email": "boruto@mail.com",
+    "branch": "Mechanical Engineering",
+    "year": 5,
+    "skills": [
+      "Node.js",
+      "MongoDB",
+      "REST APIs"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Backend Developer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Boruto enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "2ea8180b9c0c0b06ffc7ffd9",
+    "userEmail": "sarada@mail.com",
+    "name": "Sarada Uchiha",
+    "email": "sarada@mail.com",
+    "branch": "Computer Science and Engineering",
+    "year": 1,
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Product Designer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Sarada enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "02b0a8a6272c81e05ddd3ec9",
+    "userEmail": "mitsuki@mail.com",
+    "name": "Mitsuki",
+    "email": "mitsuki@mail.com",
+    "branch": "Information Technology",
+    "year": 2,
+    "skills": [
+      "Java",
+      "Algorithms",
+      "Problem Solving"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Data Scientist"
+    ],
+    "availability": "WAITING",
+    "bio": "Mitsuki enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "e655d1dded430053fca6cf9a",
+    "userEmail": "naruto@mail.com",
+    "name": "Naruto Uzumaki",
+    "email": "naruto@mail.com",
+    "branch": "Electronics & Communication (ECE)",
+    "year": 3,
+    "skills": [
+      "TypeScript",
+      "Cloud",
+      "Testing"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Researcher"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Naruto enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "e74573e0dc5122123bb82d6f",
+    "userEmail": "monkey@mail.com",
+    "name": "Monkey D. Luffy",
+    "email": "monkey@mail.com",
+    "branch": "Artificial Intelligence & Data Science",
+    "year": 4,
+    "skills": [
+      "Research",
+      "Writing",
+      "Statistics"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Team Lead"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Monkey enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "3a74ff64227a9fb2d91f0a9c",
+    "userEmail": "roronoa@mail.com",
+    "name": "Roronoa Zoro",
+    "email": "roronoa@mail.com",
+    "branch": "Mechanical Engineering",
+    "year": 5,
+    "skills": [
+      "React",
+      "UI Design",
+      "Figma"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Frontend Developer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Roronoa enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "3bab2bb4d9cc659c6adf9b10",
+    "userEmail": "nami@mail.com",
+    "name": "Nami",
+    "email": "nami@mail.com",
+    "branch": "Computer Science and Engineering",
+    "year": 1,
+    "skills": [
+      "Node.js",
+      "MongoDB",
+      "REST APIs"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Backend Developer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Nami enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "67d3873d5f472dc3e5ec8607",
+    "userEmail": "nico@mail.com",
+    "name": "Nico Robin",
+    "email": "nico@mail.com",
+    "branch": "Information Technology",
+    "year": 2,
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Product Designer"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Nico enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "c905aa4d669085dcd823af62",
+    "userEmail": "mikasa@mail.com",
+    "name": "Mikasa Ackerman",
+    "email": "mikasa@mail.com",
+    "branch": "Electronics & Communication (ECE)",
+    "year": 3,
+    "skills": [
+      "Java",
+      "Algorithms",
+      "Problem Solving"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Data Scientist"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Mikasa enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "f6c5ac5982dec455148f6e19",
+    "userEmail": "levi@mail.com",
+    "name": "Levi Ackerman",
+    "email": "levi@mail.com",
+    "branch": "Artificial Intelligence & Data Science",
+    "year": 4,
+    "skills": [
+      "TypeScript",
+      "Cloud",
+      "Testing"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Researcher"
+    ],
+    "availability": "WAITING",
+    "bio": "Levi enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  },
+  {
+    "id": "b864eeca6c62187599b8086e",
+    "userEmail": "peter@mail.com",
+    "name": "Peter Parker",
+    "email": "peter@mail.com",
+    "branch": "Mechanical Engineering",
+    "year": 5,
+    "skills": [
+      "Research",
+      "Writing",
+      "Statistics"
+    ],
+    "interests": [
+      "building useful products",
+      "collaborative projects",
+      "student communities"
+    ],
+    "preferredRoles": [
+      "Team Lead"
+    ],
+    "availability": "AVAILABLE",
+    "bio": "Peter enjoys learning by building with a team.",
+    "projects": [],
+    "experience": []
+  }
+]

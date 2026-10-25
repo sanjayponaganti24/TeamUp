@@ -48,11 +48,15 @@ export const getRooms = async ({
 }) => {
   const filter = {};
 
-  if (status) {
+  if (status && status !== 'ALL') {
     filter.status = status;
   } else {
-    // By default exclude CANCELLED and DRAFT for general explore
-    filter.status = { $in: [ROOM_STATUS.OPEN, ROOM_STATUS.FULL, ROOM_STATUS.IN_PROGRESS] };
+    // The explicit ALL filter includes every persisted room status.
+    filter.status = {
+      $in: status === 'ALL'
+        ? Object.values(ROOM_STATUS)
+        : [ROOM_STATUS.OPEN, ROOM_STATUS.FULL, ROOM_STATUS.IN_PROGRESS],
+    };
   }
 
   if (type) {
